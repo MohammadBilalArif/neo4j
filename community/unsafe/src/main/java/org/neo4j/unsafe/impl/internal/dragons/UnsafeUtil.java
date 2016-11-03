@@ -61,7 +61,7 @@ public final class UnsafeUtil
     private static final boolean DIRTY_MEMORY = flag( UnsafeUtil.class, "DIRTY_MEMORY", false );
     private static final boolean CHECK_NATIVE_ACCESS = flag( UnsafeUtil.class, "CHECK_NATIVE_ACCESS", false );
     // this allows us to temporarily disable the checking, for performance:
-    private static boolean nativeAccessCheckEnabled = true;
+    private static boolean nativeAccessCheckEnabled = false;
 
     private static final Unsafe unsafe;
     private static final MethodHandle sharedStringConstructor;
